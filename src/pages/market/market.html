@@ -9,5 +9,9 @@
 
 
 <ion-content padding>
-  <p>Market Page</p>
+  <ion-list *ngIf="coins">
+    <ion-item *ngFor="let coin of objectKeys(coins)">
+      {{coin}}
+    </ion-item>
+  </ion-list>
 </ion-content>
